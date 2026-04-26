@@ -30,7 +30,7 @@ public class Utils {
         FireworkMeta meta = fw.getFireworkMeta();
         meta.setPower(1);
         meta.addEffect(FireworkEffect.builder()
-                .withColor(Color.GOLD, Color.YELLOW, Color.RED)
+                .withColor(Color.ORANGE, Color.YELLOW, Color.RED)
                 .withFade(Color.WHITE)
                 .with(FireworkEffect.Type.BURST)
                 .trail(true)
