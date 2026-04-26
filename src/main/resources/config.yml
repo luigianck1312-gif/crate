@@ -1,0 +1,466 @@
+# ==========================================
+#        CratePlugin - Configurazione
+# ==========================================
+
+# Prefisso messaggi
+prefix: "&8[&6CratePlugin&8]&r"
+
+# ==========================================
+#              CATEGORIE CRATE
+# ==========================================
+crates:
+  comune:
+    display-name: "&fCrate Comune"
+    color: "WHITE"
+    key-name: "&fChiave Comune"
+    key-lore:
+      - "&7Usa questa chiave per aprire"
+      - "&7una &fCrate Comune&7."
+    # Prezzo nello shop (in exp levels)
+    shop-price: 5
+    rewards:
+      - type: ITEM
+        item: IRON_SWORD
+        name: "&7Spada di Ferro"
+        amount: 1
+        weight: 30
+        enchants: {}
+      - type: ITEM
+        item: BREAD
+        amount: 16
+        weight: 40
+        enchants: {}
+      - type: ITEM
+        item: IRON_INGOT
+        amount: 8
+        weight: 35
+        enchants: {}
+      - type: ITEM
+        item: COAL
+        amount: 16
+        weight: 40
+        enchants: {}
+      - type: ITEM
+        item: IRON_PICKAXE
+        name: "&7Piccone di Ferro"
+        amount: 1
+        weight: 25
+        enchants:
+          EFFICIENCY: 1
+      - type: EXPERIENCE
+        amount: 10
+        weight: 30
+      - type: ITEM
+        item: SHIELD
+        amount: 1
+        weight: 20
+        enchants: {}
+      - type: ITEM
+        item: ARROW
+        amount: 32
+        weight: 35
+        enchants: {}
+
+  non_comune:
+    display-name: "&aCrate Non Comune"
+    color: "GREEN"
+    key-name: "&aChiave Non Comune"
+    key-lore:
+      - "&7Usa questa chiave per aprire"
+      - "&7una &aCrate Non Comune&7."
+    shop-price: 15
+    rewards:
+      - type: ITEM
+        item: GOLD_SWORD
+        name: "&6Spada d'Oro"
+        amount: 1
+        weight: 25
+        enchants:
+          SHARPNESS: 1
+      - type: ITEM
+        item: GOLDEN_APPLE
+        amount: 3
+        weight: 20
+        enchants: {}
+      - type: ITEM
+        item: GOLD_INGOT
+        amount: 12
+        weight: 30
+        enchants: {}
+      - type: ITEM
+        item: IRON_CHESTPLATE
+        name: "&7Corazza di Ferro"
+        amount: 1
+        weight: 20
+        enchants:
+          PROTECTION: 1
+      - type: ITEM
+        item: BOW
+        amount: 1
+        weight: 22
+        enchants:
+          POWER: 1
+      - type: EXPERIENCE
+        amount: 25
+        weight: 25
+      - type: ITEM
+        item: DIAMOND
+        amount: 2
+        weight: 15
+        enchants: {}
+      - type: ITEM
+        item: ENCHANTED_BOOK
+        amount: 1
+        weight: 12
+        enchants: {}
+
+  raro:
+    display-name: "&bCrate Raro"
+    color: "AQUA"
+    key-name: "&bChiave Rara"
+    key-lore:
+      - "&7Usa questa chiave per aprire"
+      - "&7una &bCrate Rara&7."
+    shop-price: 35
+    rewards:
+      - type: ITEM
+        item: DIAMOND_SWORD
+        name: "&bSpada di Diamante"
+        amount: 1
+        weight: 20
+        enchants:
+          SHARPNESS: 2
+          LOOTING: 1
+      - type: ITEM
+        item: DIAMOND
+        amount: 8
+        weight: 22
+        enchants: {}
+      - type: ITEM
+        item: DIAMOND_PICKAXE
+        name: "&bPiccone di Diamante"
+        amount: 1
+        weight: 18
+        enchants:
+          EFFICIENCY: 2
+          FORTUNE: 1
+      - type: ITEM
+        item: DIAMOND_CHESTPLATE
+        name: "&bCorazza di Diamante"
+        amount: 1
+        weight: 15
+        enchants:
+          PROTECTION: 2
+      - type: EXPERIENCE
+        amount: 50
+        weight: 20
+      - type: ITEM
+        item: ENCHANTED_GOLDEN_APPLE
+        amount: 1
+        weight: 10
+        enchants: {}
+      - type: ITEM
+        item: NETHERITE_SCRAP
+        amount: 2
+        weight: 8
+        enchants: {}
+      - type: COMMAND
+        command: "give %player% minecraft:elytra 1"
+        display-name: "&bElytra"
+        weight: 5
+
+  epico:
+    display-name: "&5Crate Epico"
+    color: "DARK_PURPLE"
+    key-name: "&5Chiave Epica"
+    key-lore:
+      - "&7Usa questa chiave per aprire"
+      - "&7una &5Crate Epica&7."
+    shop-price: 80
+    rewards:
+      - type: ITEM
+        item: NETHERITE_SWORD
+        name: "&5Spada di Netherite"
+        amount: 1
+        weight: 15
+        enchants:
+          SHARPNESS: 3
+          LOOTING: 2
+          FIRE_ASPECT: 1
+      - type: ITEM
+        item: NETHERITE_PICKAXE
+        name: "&5Piccone di Netherite"
+        amount: 1
+        weight: 14
+        enchants:
+          EFFICIENCY: 3
+          FORTUNE: 2
+          UNBREAKING: 2
+      - type: ITEM
+        item: NETHERITE_INGOT
+        amount: 3
+        weight: 16
+        enchants: {}
+      - type: ITEM
+        item: NETHERITE_CHESTPLATE
+        name: "&5Corazza di Netherite"
+        amount: 1
+        weight: 12
+        enchants:
+          PROTECTION: 3
+          UNBREAKING: 2
+      - type: EXPERIENCE
+        amount: 100
+        weight: 18
+      - type: ITEM
+        item: ENCHANTED_GOLDEN_APPLE
+        amount: 3
+        weight: 14
+        enchants: {}
+      - type: COMMAND
+        command: "give %player% minecraft:totem_of_undying 2"
+        display-name: "&5x2 Totem dell'Immortalità"
+        weight: 10
+      - type: COMMAND
+        command: "eco give %player% 5000"
+        display-name: "&5$5,000 di denaro"
+        weight: 11
+
+  leggendario:
+    display-name: "&6Crate Leggendario"
+    color: "GOLD"
+    key-name: "&6Chiave Leggendaria"
+    key-lore:
+      - "&7Usa questa chiave per aprire"
+      - "&7una &6Crate Leggendaria&7."
+    shop-price: 200
+    rewards:
+      - type: ITEM
+        item: NETHERITE_SWORD
+        name: "&6Lama Leggendaria"
+        amount: 1
+        weight: 10
+        enchants:
+          SHARPNESS: 5
+          LOOTING: 3
+          FIRE_ASPECT: 2
+          SWEEPING_EDGE: 3
+          UNBREAKING: 3
+          MENDING: 1
+      - type: ITEM
+        item: NETHERITE_CHESTPLATE
+        name: "&6Corazza Leggendaria"
+        amount: 1
+        weight: 9
+        enchants:
+          PROTECTION: 4
+          UNBREAKING: 3
+          MENDING: 1
+          THORNS: 2
+      - type: ITEM
+        item: NETHERITE_INGOT
+        amount: 8
+        weight: 12
+        enchants: {}
+      - type: COMMAND
+        command: "give %player% minecraft:enchanted_golden_apple 8"
+        display-name: "&6x8 Mela d'Oro Incantata"
+        weight: 11
+      - type: COMMAND
+        command: "eco give %player% 15000"
+        display-name: "&6$15,000 di denaro"
+        weight: 12
+      - type: EXPERIENCE
+        amount: 200
+        weight: 13
+      - type: COMMAND
+        command: "give %player% minecraft:elytra 1{Enchantments:[{id:unbreaking,lvl:3},{id:mending,lvl:1}]}"
+        display-name: "&6Elytra Potenziata"
+        weight: 8
+      - type: COMMAND
+        command: "lp user %player% permission set prefix.legend true"
+        display-name: "&6Titolo [Leggendario]"
+        weight: 5
+
+  mitico:
+    display-name: "&cCrate Mitico"
+    color: "RED"
+    key-name: "&cChiave Mitica"
+    key-lore:
+      - "&7Usa questa chiave per aprire"
+      - "&7una &cCrate Mitica&7."
+    shop-price: 500
+    rewards:
+      - type: ITEM
+        item: NETHERITE_SWORD
+        name: "&c&lSpada Mitica"
+        amount: 1
+        weight: 8
+        enchants:
+          SHARPNESS: 5
+          LOOTING: 3
+          FIRE_ASPECT: 2
+          SWEEPING_EDGE: 3
+          UNBREAKING: 3
+          MENDING: 1
+          KNOCKBACK: 2
+      - type: ITEM
+        item: NETHERITE_HELMET
+        name: "&c&lElmo Mitico"
+        amount: 1
+        weight: 7
+        enchants:
+          PROTECTION: 4
+          UNBREAKING: 3
+          MENDING: 1
+          RESPIRATION: 3
+          AQUA_AFFINITY: 1
+      - type: ITEM
+        item: NETHERITE_CHESTPLATE
+        name: "&c&lCorazza Mitica"
+        amount: 1
+        weight: 7
+        enchants:
+          PROTECTION: 4
+          UNBREAKING: 3
+          MENDING: 1
+          THORNS: 3
+      - type: ITEM
+        item: NETHERITE_LEGGINGS
+        name: "&c&lGambali Mitici"
+        amount: 1
+        weight: 7
+        enchants:
+          PROTECTION: 4
+          UNBREAKING: 3
+          MENDING: 1
+          SWIFT_SNEAK: 3
+      - type: ITEM
+        item: NETHERITE_BOOTS
+        name: "&c&lStivali Mitici"
+        amount: 1
+        weight: 7
+        enchants:
+          PROTECTION: 4
+          UNBREAKING: 3
+          MENDING: 1
+          FEATHER_FALLING: 4
+          DEPTH_STRIDER: 3
+      - type: COMMAND
+        command: "eco give %player% 50000"
+        display-name: "&c$50,000 di denaro"
+        weight: 10
+      - type: COMMAND
+        command: "give %player% minecraft:enchanted_golden_apple 16"
+        display-name: "&cx16 Mela d'Oro Incantata"
+        weight: 9
+      - type: COMMAND
+        command: "lp user %player% permission set rank.mythic true"
+        display-name: "&c&lRank [MITICO]"
+        weight: 4
+      - type: COMMAND
+        command: "give %player% minecraft:nether_star 5"
+        display-name: "&cx5 Stella del Nether"
+        weight: 8
+
+# ==========================================
+#              DAILY LOGIN
+# ==========================================
+daily-login:
+  enabled: true
+  # Ricompense per streak di giorni consecutivi
+  streak-rewards:
+    1:
+      key-type: comune
+      key-amount: 1
+    2:
+      key-type: comune
+      key-amount: 2
+    3:
+      key-type: non_comune
+      key-amount: 1
+    4:
+      key-type: comune
+      key-amount: 2
+    5:
+      key-type: non_comune
+      key-amount: 1
+    6:
+      key-type: non_comune
+      key-amount: 2
+    7:
+      key-type: raro
+      key-amount: 1
+    14:
+      key-type: epico
+      key-amount: 1
+    30:
+      key-type: leggendario
+      key-amount: 1
+    60:
+      key-type: mitico
+      key-amount: 1
+
+# ==========================================
+#                  QUEST
+# ==========================================
+quests:
+  kill_100_mobs:
+    display-name: "&eCacciatore"
+    description: "Uccidi 100 mob"
+    type: KILL_MOBS
+    target: 100
+    reward-key: comune
+    reward-amount: 2
+  mine_500_blocks:
+    display-name: "&eMineratore"
+    description: "Mina 500 blocchi"
+    type: MINE_BLOCKS
+    target: 500
+    reward-key: non_comune
+    reward-amount: 1
+  kill_50_players:
+    display-name: "&cGuerriero"
+    description: "Uccidi 50 giocatori"
+    type: KILL_PLAYERS
+    target: 50
+    reward-key: raro
+    reward-amount: 1
+  fish_200:
+    display-name: "&9Pescatore"
+    description: "Pesca 200 pesci"
+    type: FISH
+    target: 200
+    reward-key: non_comune
+    reward-amount: 2
+  craft_1000:
+    display-name: "&aArtigiano"
+    description: "Crafta 1000 oggetti"
+    type: CRAFT_ITEMS
+    target: 1000
+    reward-key: raro
+    reward-amount: 1
+  kill_boss_10:
+    display-name: "&5Cacciatore di Boss"
+    description: "Uccidi 10 boss (Ender Dragon / Wither)"
+    type: KILL_BOSS
+    target: 10
+    reward-key: epico
+    reward-amount: 1
+  reach_level_50:
+    display-name: "&6Esperto"
+    description: "Raggiungi il livello 50 di esperienza"
+    type: REACH_LEVEL
+    target: 50
+    reward-key: epico
+    reward-amount: 1
+
+# ==========================================
+#              ANIMAZIONE SPIN
+# ==========================================
+animation:
+  spin-time: 40        # tick totali animazione (2 secondi)
+  spin-delay: 2        # tick per ogni frame
+  sound-spin: BLOCK_NOTE_BLOCK_PLING
+  sound-win: ENTITY_PLAYER_LEVELUP
+  firework-on-win: true
