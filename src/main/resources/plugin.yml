@@ -1,51 +1,20 @@
-name: CratePlugin
-version: '${project.version}'
-main: it.cratePlugin.CratePlugin
-api-version: '1.21'
-description: Sistema di Crate con chiavi, quest, daily login e shop integrato.
-authors: [ ]
-prefix: CratePlugin
-
+name: ItaliaCrate
+version: 1.0.0
+main: it.italiacrate.ItaliaCrate
+api-version: 1.21
+description: Sistema Crate per SteelThrone
+authors: [SteelThrone]
 commands:
+  place:
+    description: Piazza crate o keyshop
+    usage: /place <crate <rarità>|keyshop|daily>
   crate:
-    description: Apri una crate con la chiave corrispondente
-    usage: /crate <tipo>
-    aliases: [opencrate]
-  cratekey:
-    description: Gestione chiavi crate
-    usage: /cratekey <give|remove|check> <player> <tipo> [quantità]
-    permission: crateplugin.admin
-  cratedaily:
-    description: Riscatta il premio daily login
-    usage: /cratedaily
-  cratequest:
-    description: Gestione quest crate
-    usage: /cratequest <list|complete> [quest_id] [player]
-  crateshop:
-    description: Apri lo shop delle chiavi crate
-    usage: /crateshop
-  cratereload:
-    description: Ricarica la configurazione del plugin
-    usage: /cratereload
-    permission: crateplugin.admin
-  crateplace:
-    description: Piazza una crate fisica nel mondo
-    usage: /crateplace <tipo>
-    permission: crateplugin.admin
-
+    description: Gestione crate
+    usage: /crate <edit>
+  givekey:
+    description: Dai una chiave a un giocatore
+    usage: /givekey <player> <comune|epica|leggendaria|mitica> [quantità]
 permissions:
-  crateplugin.admin:
-    description: Accesso ai comandi admin del plugin
+  italiacrate.admin:
+    description: Permessi admin crate
     default: op
-  crateplugin.use:
-    description: Usa le crate
-    default: true
-  crateplugin.daily:
-    description: Accedi al daily login
-    default: true
-  crateplugin.shop:
-    description: Accedi allo shop
-    default: true
-  crateplugin.quest:
-    description: Accedi alle quest
-    default: true
